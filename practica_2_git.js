@@ -104,3 +104,74 @@ console.log(transformado)
 trasnformarAtipos= trasnformarAtipos.map(i=> typeof(i));
 
 console.log(trasnformarAtipos);
+
+
+
+// desestructurando objetos
+
+const subject= {sigla:"sis-719",semestre:"7mo"};
+const {sigla, semestre} = subject;
+console.log(sigla);
+console.log(semestre);
+
+// Puedes desestructurar tan profundamente como quieras, siempre considerando si esa propiedad existe.
+
+const computer ={
+    processor: {
+        transistor: { 
+            silicon: { 
+                thickness: '9nm' 
+            }
+        },
+        ventilador:"Aura II" 
+    }
+} 
+console.log(computer.processor.ventilador);
+
+
+// Desestructurando un array
+
+const numbers= [1,2,3,4,5,6];
+const [uno, dos]= numbers;
+
+console.log(uno);
+console.log(dos);
+
+
+Ejercicio
+
+const person = {
+    head:   {
+        eyes: '8',
+        mounth: {
+            teeth: '7',
+            tongue: '4'
+        }
+    },
+    body: {
+        shoulders: '10',
+        chest: '9',
+        arms: '8.5',
+        hands: '9',
+        legs: '10'
+    }
+}
+
+
+// Obtenga la legs propiedad y dale el nombre de myLegs,
+const {body} = person;
+
+body.legs = "myLegs";
+
+console.log(body);
+
+
+// obtenga la eyes propiedad y dale el nombre de myEyes.
+
+const {head} = person;
+console.log(head);
+
+head.eyes="myEyes";
+console.log(head);
+
+console.log(person);

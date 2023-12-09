@@ -193,3 +193,20 @@ const hubby= "dormir";
 
 console.log(`Hola, me llamo ${Name} ${FirtName} ${LastName} tengo ${Age} años y mi pasatiempo es ${hubby}`)
 
+
+// Operator Ternary,
+const num = 7; 
+const result = (num % 2 == 0) ? "El numero es Par" : "El numero es Impar" 
+console.log(result)
+
+
+
+// Ejercicio:
+// Utilice el operador ternario para almacenar "Adulto" en la variable Status si el valor de la variable Edad es mayor o igual que 18. De lo contrario, almacene "Menor" en la variable Status.
+// Se utiliza console.log para mostrar el valor de la variable Status.
+
+
+const Edad =18;
+const Status = (Edad >=18) ? "Adulto" : "Menor";
+console.log(Status);
+

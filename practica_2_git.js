@@ -210,3 +210,13 @@ const Edad =18;
 const Status = (Edad >=18) ? "Adulto" : "Menor";
 console.log(Status);
 
+
+
+// modulos
+
+// en el archivo modulo.js 
+export const PI = 3.1416; 
+// en el archivo index.js 
+import {PI} from './modulo.js'; console.log(PI);
+
+

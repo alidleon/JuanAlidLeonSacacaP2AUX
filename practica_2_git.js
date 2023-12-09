@@ -175,3 +175,21 @@ head.eyes="myEyes";
 console.log(head);
 
 console.log(person);
+
+// plantilla de cadenas
+
+const nombre = "Edson" 
+console.log(`mi nombre es: ${nombre}`);
+
+
+// Ejercicio:
+// Crear los siguientes variables : Name, FirstName, LastName, Age, hubby. y mostrar en una frase.
+
+const Name= "alid";
+const FirtName= "leon";
+const LastName= "sacaca";
+const Age= "26";
+const hubby= "dormir";
+
+console.log(`Hola, me llamo ${Name} ${FirtName} ${LastName} tengo ${Age} años y mi pasatiempo es ${hubby}`)
+
